@@ -30,17 +30,24 @@
           <img
             src="images/44699234_2658798810827553_3940312879793700864_n.jpg"
             alt="foto pessoal"
+            id="userPicture"
           />
         </div>
 
         <h1 id="userName">Abner Stelmastchuk</h1>
         <!-- Caracteristica do "h1" é deixar o texto grande / grosso-->
-        <a href="https://github.com/AbnerStelmastchuk" target="_blank">
-          <img src="images/github.svg" alt="ícone github" />
-          abnerstelmastchuk</a
+        <a
+          id="userLink"
+          href="https://github.com/AbnerStelmastchuk"
+          target="_blank"
         >
+          <img src="images/github.svg" alt="ícone github" />
+          <span id="userLogin">abnerstelmastchuk</span>
+        </a>
         <!-- Caracteristica do "a" é o hiper link-->
-        <p>An instructor focused on helping pople start programming for web</p>
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -72,27 +79,6 @@
         </ul>
       </div>
     </main>
-
-    <script>
-      const linksSocialMedia = {
-        github: 'AbnerStelmastchuk',
-        youtube: 'channel/UC9n9545FsqpTH2RMVk3jCpA',
-        facebook: 'Abner.Stelmastchuk',
-        instagram: 'stelmastchuk_',
-        twitter: ''
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `http://${social}.com/${linksSocialMedia[social]}`
-
-          //alert(li.children[0].href)
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
