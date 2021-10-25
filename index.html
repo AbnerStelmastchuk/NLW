@@ -33,44 +33,66 @@
           />
         </div>
 
-        <h1>Abner Stelmastchuk</h1>
+        <h1 id="userName">Abner Stelmastchuk</h1>
         <!-- Caracteristica do "h1" é deixar o texto grande / grosso-->
-        <a href="https://instagram.com/stelmastchuk_">
+        <a href="https://github.com/AbnerStelmastchuk" target="_blank">
           <img src="images/github.svg" alt="ícone github" />
           abnerstelmastchuk</a
         >
         <!-- Caracteristica do "a" é o hiper link-->
         <p>An instructor focused on helping pople start programming for web</p>
 
-        <ul>
-          <li>
-            <a href="https://www.youtube.com/channel/UC9n9545FsqpTH2RMVk3jCpA">
-              <img src="images/youtube.svg" alt="ícone youtube" target="_blank"
-            /></a>
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a
+              href="https://www.youtube.com/channel/UC9n9545FsqpTH2RMVk3jCpA"
+              target="_blank"
+            >
+              <img src="images/youtube.svg" alt="ícone youtube" />
+            </a>
           </li>
-          <li>
-            <a href="https://www.facebook.com/Abner.Stelmastchuk/">
-              <img
-                src="images/facebook.svg"
-                alt="ícone facebook"
-                target="_blank"
-            /></a>
+          <li class="facebook">
+            <a
+              href="https://www.facebook.com/Abner.Stelmastchuk/"
+              target="_blank"
+            >
+              <img src="images/facebook.svg" alt="ícone facebook" />
+            </a>
           </li>
-          <li>
-            <a href="https://www.instagram.com/stelmastchuk_">
-              <img
-                src="images/instagram.svg"
-                alt="ícone instagram"
-                target="_blank"
-            /></a>
+          <li class="instagram">
+            <a href="https://www.instagram.com/stelmastchuk_" target="_blank">
+              <img src="images/instagram.svg" alt="ícone instagram" />
+            </a>
           </li>
-          <li>
-            <a href="https://twitter.com/AbnerShivatree">
-              <img src="images/twitter.svg" alt="ícone twitter" target="_blank"
-            /></a>
+          <li class="twitter">
+            <a href="https://twitter.com/AbnerShivatree" target="_blank">
+              <img src="images/twitter.svg" alt="ícone twitter" />
+            </a>
           </li>
         </ul>
       </div>
     </main>
+
+    <script>
+      const linksSocialMedia = {
+        github: 'AbnerStelmastchuk',
+        youtube: 'channel/UC9n9545FsqpTH2RMVk3jCpA',
+        facebook: 'Abner.Stelmastchuk',
+        instagram: 'stelmastchuk_',
+        twitter: ''
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+
+          li.children[0].href = `http://${social}.com/${linksSocialMedia[social]}`
+
+          //alert(li.children[0].href)
+        }
+      }
+
+      changeSocialMediaLinks()
+    </script>
   </body>
 </html>
