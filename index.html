@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 
-<html> <!-- Tag Pai, ou Tag raiz considerando o inicio de tudo!-->
-  <head> <!-- Tag Filho, ou também Nó filho //// Pode ser considerado Irmão do Body-->
+<html>
+  <!-- Tag Pai, ou Tag raiz considerando o inicio de tudo!-->
+  <head>
+    <!-- Tag Filho, ou também Nó filho //// Pode ser considerado Irmão do Body-->
     <title>Abner Stelmastchuk - DoWhile 2021</title>
 
+    <!--
     <style>
-      /*Cascading Stylesheet */
-      html,
-      body {
-        height: 100%;
-      }
+    </style>Tag responsável por realizar o estilo através do css, se colocado no html, tem que ser colocado na tag <head>-->
 
-      body{
-        display: grid;
-        place-items: center;
-      
-        background: lightblue;
-      }
-
-      h1{
-        font-size: 1.5rem;
-      }
-
-      a{
-        color: black;
-        text-decoration: none;
-      }
-    </style> <!-- Tag responsável por realizar o estilo através do css, se colocado no html, tem que ser colocado na tag <head>-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body> <!-- Tag Filho, ou também Nó filho //// Pode ser considerado Irmão do Head-->
-    <h1>Abner Stelmastchuk</h1> <!-- Caracteristica do "h1" é deixar o texto grande / grosso-->
-    <a href="https://instagram.com/stelmastchuk_">@abnerstelmastchuk</a> <!-- Caracteristica do "a" é o hiper link-->
+  <body>
+    <!-- Tag Filho, ou também Nó filho //// Pode ser considerado Irmão do Head-->
+
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="images/build.svg" alt="selo rocketseat" />
+          </span>
+          <img
+            src="images/44699234_2658798810827553_3940312879793700864_n.jpg"
+            alt="foto pessoal"
+          />
+        </div>
+
+        <h1>Abner Stelmastchuk</h1>
+        <!-- Caracteristica do "h1" é deixar o texto grande / grosso-->
+        <a href="https://instagram.com/stelmastchuk_">
+          <img src="images/github.svg" alt="ícone github" />
+          abnerstelmastchuk</a
+        >
+        <!-- Caracteristica do "a" é o hiper link-->
+        <p>An instructor focused on helping pople start programming for web</p>
+
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/channel/UC9n9545FsqpTH2RMVk3jCpA">
+              <img src="images/youtube.svg" alt="ícone youtube" target="_blank"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Abner.Stelmastchuk/">
+              <img
+                src="images/facebook.svg"
+                alt="ícone facebook"
+                target="_blank"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/stelmastchuk_">
+              <img
+                src="images/instagram.svg"
+                alt="ícone instagram"
+                target="_blank"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/AbnerShivatree">
+              <img src="images/twitter.svg" alt="ícone twitter" target="_blank"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>
-
